@@ -10,3 +10,7 @@ def root():
 @app.get("/health")
 def health():
     return JSONResponse({"message": "healthy"})
+
+@app.get("/status")
+def status():
+    return JSONResponse({"status": "ok"})
